@@ -1,9 +1,14 @@
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
 #include <iomanip>
 
+#include <cstdlib>
+#include <ctime>
+
+#include <string>
+
+
 using namespace std;
+
 
 double getRemainingMoney(double sales, double stateTax, double countyTax) {
 	stateTax = stateTax / 100;
@@ -76,23 +81,52 @@ void narrowingTest() {
 	constexpr short shortMax = numeric_limits<short>::max();
 	cout << "Short max number is: " << setw(32) << shortMax << endl << endl
 		<< "10'000'000 converted to short is :" << setw(20) << shortN << endl << endl;
+}
 
+void violateUserPrivacy() {
+
+	string userName;
+	cout << "Insert your name:";
+	getline(cin, userName);
+	cout << endl;
+
+	string country;
+	cout << "Insert your country:";
+	getline(cin, country);
+	cout << endl;
+
+	string city;
+	cout << "Insert your city:";
+	getline(cin, city);
+	cout << endl;
+
+	string street;
+	cout << "Insert your street:";
+	getline(cin, street);
+	cout << endl
+
+
+		 << "You're " << userName << ", you live in " << street << " street, " << city << ", " << country;
 
 }
 
+void storeNames() {
+
+	string nameArray[] = {"Name1", "Name2" ,"Name3"};
+	cout << "Write 3 names:" << endl;
+
+	getline(cin, nameArray[0]);
+	getline(cin, nameArray[1]);
+	getline(cin, nameArray[2]);
+
+	cout << "First name you wrote is: " << nameArray[0];
+}
+
+
+
 int main() {
 
-	narrowingTest();
+	storeNames();
 
 	return 1;
-
-
-	/*int chosenFunc;
-
-	cout << "Which functionality do you want to use?" << endl << "1 - taxCalculator" << endl << "2 - circumferenceArea" << endl << "3 - rollDice" << endl;
-	cin >> chosenFunc;
-	switch (chosenFunc) {
-		1 =
-	}
-	*/
 }
