@@ -5,3 +5,12 @@
 */*.vs
 !.h
 !.cpp
+*.vcxproj*
+*.tlog
+*.idb
+*.pdb
+*.recipe
+*.log
+*.ilk
+*.obj
+*.sln
