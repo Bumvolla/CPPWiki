@@ -33,7 +33,7 @@ public:
 			const FString& DialogTitle = TEXT("Open File Dialog"),
 			const FString& DefaultPath = TEXT("/path/path"),
 			const FString& DefaultFile = TEXT(""),
-			const FString& FileType = TEXT("GUESS (GUESS Files)|*.guess"),
+			const FString& FileType = TEXT("Any (Any)|*.*"),
 			bool IsMultiple = false
 		);
 

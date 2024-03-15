@@ -1,14 +1,4 @@
-#include <iostream>
-#include <iomanip>
-
-#include <cstdlib>
-#include <ctime>
-
-#include <string>
-
-
-using namespace std;
-
+#include "Headers.h"
 
 double getRemainingMoney(double sales, double stateTax, double countyTax) {
 	stateTax = stateTax / 100;
@@ -52,7 +42,6 @@ int circunferenceArea() {
 
 	return 0;
 }
-
 
 int dice() {
 
@@ -120,13 +109,4 @@ void storeNames() {
 	getline(cin, nameArray[2]);
 
 	cout << "First name you wrote is: " << nameArray[0];
-}
-
-
-
-int main() {
-
-	storeNames();
-
-	return 1;
 }
