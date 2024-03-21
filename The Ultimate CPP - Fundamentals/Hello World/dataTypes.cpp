@@ -1,4 +1,4 @@
-#include "Headers.h"
+#include "Headers/dataTypes.h"
 
 double getRemainingMoney(double sales, double stateTax, double countyTax) {
 	stateTax = stateTax / 100;
