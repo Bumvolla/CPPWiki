@@ -12,6 +12,7 @@
 #include "HAL/IPlatformFileModule.h"
 #include "HAL/PlatformFilemanager.h"
 
+
 UFilePickerPluginBPLibrary::UFilePickerPluginBPLibrary(const FObjectInitializer& ObjectInitializer)
 : Super(ObjectInitializer)
 {
@@ -158,7 +159,7 @@ void UFilePickerPluginBPLibrary::OpenDirectoryDialog(
 
 }
 
-void UFilePickerPluginBPLibrary::PrintData(
+/*void UFilePickerPluginBPLibrary::PrintData(
 	EDialogResult& OutputPin,
 	const FString& File)
 {
@@ -173,7 +174,7 @@ void UFilePickerPluginBPLibrary::PrintData(
 
 	UE_LOG(FilePickerPlugin, Log, TEXT("Open Directory Dialog : Cancelled"));
 	OutputPin = EDialogResult::Cancelled;
-}
+}*/
 
 bool UFilePickerPluginBPLibrary::CreateDirectory(
 	const FString& Directory)
@@ -186,7 +187,6 @@ bool UFilePickerPluginBPLibrary::CreateDirectory(
 	bool result = PlatformFile.CreateDirectory(CreationDir);
 	return result;
 }
-
 
 void* UFilePickerPluginBPLibrary::GetWindowHandle()
 {

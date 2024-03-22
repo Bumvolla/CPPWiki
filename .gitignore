@@ -1,16 +1,2 @@
 # Visual Studio 2015 user specific files
 .vs/
-
-*/*x64
-*/*.vs
-!.h
-!.cpp
-*.vcxproj*
-*.tlog
-*.idb
-*.pdb
-*.recipe
-*.log
-*.ilk
-*.obj
-*.sln
